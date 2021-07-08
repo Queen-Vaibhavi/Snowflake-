@@ -9,7 +9,8 @@ var flakes = [];
 
 function preload(){
   bgImg = loadImage("snowfall background.jpg");
-penguin = loadImage("Image-Of-Doraemon-With-Friends-In-Winter-removebg-preview");
+penguin = loadImage("winter!/Image-Of-Doraemon-With-Friends-In-Winter-removebg-preview.png");
+merry = loadSound("winter!/Winter Tone.mp3");
   
 }
 
@@ -23,7 +24,7 @@ function setup() {
     flakes.push(new Snow(random(0 ,900),random(0,750)));
   }
 
-  all5 = createSprite(100,450,50,50);
+  all5 = createSprite(265,515,50,50);
   all5.addImage(penguin);
 
 }
@@ -41,6 +42,6 @@ function draw() {
     }
   }
 
-
-
+merry.play();
+ //mam there is some problem with he audios playing.it sounds well at first,then later the voice creaks.please help.
 }
